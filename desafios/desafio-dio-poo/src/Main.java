@@ -14,14 +14,14 @@ public class Main {
         curso1.setCargaHoraria(4);
 
         Curso curso2 = new Curso();
-        curso1.setTitulo("Curso de JS");
-        curso1.setDescricao("Descrição Curso de Javascript");
-        curso1.setCargaHoraria(2);
+        curso2.setTitulo("Curso de JS");
+        curso2.setDescricao("Descrição Curso de Javascript");
+        curso2.setCargaHoraria(2);
 
         Curso curso3 = new Curso();
-        curso1.setTitulo("Curso de Python");
-        curso1.setDescricao("Descrição Curso de Python");
-        curso1.setCargaHoraria(3);
+        curso3.setTitulo("Curso de Python");
+        curso3.setDescricao("Descrição Curso de Python");
+        curso3.setCargaHoraria(3);
 
         Mentoria mentoria1 = new Mentoria();
         mentoria1.setTitulo("Mentoria de Padrões de Projeto");
@@ -34,11 +34,15 @@ public class Main {
 
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(curso3);
+        bootcamp.getConteudos().add(mentoria1);
 
         Dev devCamilla = new Dev();
         devCamilla.setNome("Camila");
         devCamilla.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Camila: " + devCamilla.getConteudosInscritos());
+        devCamilla.progredir();
+        devCamilla.progredir();
         devCamilla.progredir();
         System.out.println('-');
         System.out.println("Conteúdos Inscritos Camila: " + devCamilla.getConteudosInscritos());
@@ -49,8 +53,8 @@ public class Main {
         System.out.println("---------------------");
 
         Dev devJoao = new Dev();
-        devCamilla.setNome("Joao");
-        devCamilla.inscreverBootcamp(bootcamp);
+        devJoao.setNome("Joao");
+        devJoao.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Joao: " + devJoao.getConteudosInscritos());
         devJoao.progredir();
         System.out.println('-');
