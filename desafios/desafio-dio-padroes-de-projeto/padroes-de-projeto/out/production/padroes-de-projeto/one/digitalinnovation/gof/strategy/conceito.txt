@@ -1,0 +1,2 @@
+Padrão Comportamental - Strategy
+Simplifica a variação de algoritmos para a resolução de um mesmo problema.

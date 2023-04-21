@@ -1,0 +1,2 @@
+Padrão EStrutural - Facade
+Provê uma interface que reduza a complexidade nas integrações com subsistemas.
